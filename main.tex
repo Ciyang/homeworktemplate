@@ -1,0 +1,62 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{ifpdf}
+\ifpdf
+   % put here packages only for the PDF:
+   \DeclareGraphicsExtensions{.pdf,.png,.jpg,.mps}
+   \usepackage{hyperref} 
+\else
+   % put here packages only for the DVI:
+\fi
+ 
+% put all the other packages here:
+ 
+\usepackage{mystyle}
+
+ 
+\begin{document}
+
+
+%######  NORMAL TITLE  ######
+\title{This is my Homework Exercise Template}
+\author{Ciyang Qing}
+%\date{}   % default is today
+
+\maketitle
+%########################
+
+%###### BOOK or THESIS ######
+%\input{./tex/title.tex}     % special title page
+%\tableofcontents
+%\listoffigures
+%\listoftables
+%########################
+
+%###### HOMEWORK ######
+
+\input{./tex/ex1.tex}  % Ex1  
+   
+\input{./tex/ex2.tex}  % Ex2
+    
+\input{./tex/ex3.tex}  % Ex3     
+       
+\input{./tex/ex4.tex}  % Ex4    
+   
+\input{./tex/ex5.tex}  % Ex5    
+
+
+%########################
+
+
+%\input{./tex/abstract.tex}
+%\input{./tex/body.tex}
+%\appendix
+%\input{./tex/myappendix.tex}
+ 
+ 
+% Bibliography using bibtex
+%\bibliographystyle{plain}
+%\bibliography{sample1,sample2,...,samplen}   % no space between the commas
+ 
+\end{document}
